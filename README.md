@@ -4,11 +4,23 @@ A fast, browserless WhatsApp group member scraper by Anony. Extracts phone numbe
 
 ## Features
 
-- No browser or Chromium required
-- Automatically skips group admins and superadmins
-- Handles privacy-restricted members
-- Sorts numbers in ascending order
-- Adds + country code prefix
+- Extract members from any WhatsApp group via invite link
+- Strict admin filtering (skips admin and superadmin)
+- LID fallback for privacy-restricted members
+- Ascending sort of all numbers
+- + country code prefix on every number
+- CSV and TXT output files
+- Session persistence (scan QR once)
+
+## Benefits
+
+- No browser or Chromium needed
+- Works on low-end VPS, Termux, or any device with Node.js
+- Lightweight dependencies (no Puppeteer, no Selenium)
+- Runs headless. Perfect for automation and cron jobs
+- Fast. Fetches full group metadata in seconds
+- Open source and free
+- Reusable session. No repeated QR scans
 
 ## Requirements
 
@@ -41,7 +53,7 @@ npm install
 
 ### 4. Run
 
-node scraper.js "https://chat.whatsapp.com/XXXXXXXX"
+node scraper.js "https://chat.whatsapp.com/XXXXXXXX" (remove “ & paste whatsapp group link)
 
 Scan the QR with WhatsApp. Output files will be generated in the same folder.
 
