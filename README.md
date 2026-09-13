@@ -17,7 +17,7 @@ A fast, browserless WhatsApp group member scraper by Anony. Extracts phone numbe
 
 ## Installation
 
-git clone https://github.com/thetechnicalguyx/whatsapp-scraper-by-anony.git
+git clone https://github.com/the-anonyyy/whatsapp-scraper-by-anony.git
 cd whatsapp-scraper-by-anony
 npm install
 
